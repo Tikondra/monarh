@@ -37,6 +37,11 @@
 
   .callback__btn {
     max-width: 240px;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: darken(#F6BE2D, 15%);
+    }
   }
 }
 

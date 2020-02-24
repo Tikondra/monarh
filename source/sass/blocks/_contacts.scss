@@ -14,21 +14,37 @@
 }
 
 .contacts__address {
+  padding: 5px;
+  padding-left: 35px;
   font-size: 16px;
   line-height: 20px;
+  background-image: url("../img/pin.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
 }
 
 .contacts__phone {
+  display: block;
+  padding: 5px;
+  padding-left: 35px;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   color: #fff;
   text-decoration: none;
+  background-image: url("../img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
 }
 
 .contacts__time {
+  padding: 5px;
+  padding-left: 35px;
   font-size: 16px;
   line-height: 20px;
+  background-image: url("../img/clock.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
 
   &--gray {
     color: #CDCDCD;

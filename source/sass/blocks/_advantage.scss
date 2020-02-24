@@ -4,12 +4,26 @@
 }
 
 .advantage__title {
+  position: relative;
   margin-bottom: 80px;
   font-weight: 900;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   color: #111111;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -76px;
+    width: 152px;
+    height: 5px;
+    background-image: url("../img/line-gray.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .advantage__list {

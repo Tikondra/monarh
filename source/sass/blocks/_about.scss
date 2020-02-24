@@ -11,11 +11,24 @@
 }
 
 .about__subtitle {
+  position: relative;
   margin: 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   color: #333333;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 15px;
+    width: 152px;
+    height: 5px;
+    background-image: url("../img/line-gray.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .about__text {

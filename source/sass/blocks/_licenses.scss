@@ -23,11 +23,25 @@
 }
 
 .licenses__title {
+  position: relative;
   width: 100%;
   font-weight: 900;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -76px;
+    width: 152px;
+    height: 5px;
+    background-image: url("../img/line-yellow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .licenses__subtitle {
