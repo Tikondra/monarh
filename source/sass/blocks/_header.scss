@@ -1,0 +1,64 @@
+.header {
+  background-color: #111111;
+}
+
+.header__wrapper {
+  max-width: 500px;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header__address {
+  padding-left: 30px;
+  color: #fff;
+  background-image: url("../img/pin.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.header__phone {
+  padding-left: 30px;
+  color: #fff;
+  text-decoration: none;
+  background-image: url("../img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-color: transparent;
+    position: relative;
+    z-index: 10;
+  }
+
+  .header__wrapper {
+    max-width: none;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .header__contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .header__address {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__wrapper {
+    max-width: 1170px;
+  }
+}

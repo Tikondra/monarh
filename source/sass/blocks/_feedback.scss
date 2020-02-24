@@ -1,0 +1,50 @@
+.feedback {
+  background-color: #161616;
+  color: #fff;
+}
+
+.feedback__form {
+  padding: 15px;
+  max-width: 302px;
+  margin: auto;
+}
+
+.feedback__title {
+  width: 100%;
+}
+
+.feedback__input,
+.feedback__text {
+  width: 100%;
+  padding: 13px 10px;
+  margin-bottom: 20px;
+}
+
+.feedback__btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  background-color: #F6BE2D;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .feedback__form {
+    max-width: 623px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .feedback__input,
+  .feedback__text {
+    max-width: 302px;
+  }
+
+  .feedback__btn {
+    max-width: 302px;
+  }
+}

@@ -1,0 +1,42 @@
+.about__content {
+  padding: 15px;
+}
+
+.about__title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #111111;
+}
+
+.about__subtitle {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.about__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #464646;
+}
+
+@media (min-width: 600px) {
+  .about {
+    max-width: 1170px;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about__content {
+    order: -1;
+    max-width: 500px;
+  }
+}
