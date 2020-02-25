@@ -1,4 +1,5 @@
 .licenses {
+  position: relative;
   background-color: #252525;
   color: #fff;
 }
@@ -60,10 +61,11 @@
 
 .licenses__modal {
   display: none;
-  position: fixed;
-  top: 265px;
+  position: absolute;
+  top: 0;
   left: 0;
-  max-width: 400px;
+  z-index: 2;
+  margin: auto;
 
   &--show {
     display: block;
