@@ -1,5 +1,8 @@
 .header {
   background-color: #111111;
+  position: sticky;
+  z-index: 10;
+  top: 0;
 }
 
 .header__wrapper {
@@ -34,12 +37,6 @@
 }
 
 @media (min-width: 768px) {
-  .header {
-    background-color: transparent;
-    position: relative;
-    z-index: 10;
-  }
-
   .header__wrapper {
     max-width: none;
     justify-content: flex-start;

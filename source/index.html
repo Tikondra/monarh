@@ -14,16 +14,16 @@
       <nav class="header__navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--active" href="">О нас</a>
+            <a class="navigation__link navigation__link--active scroll-to" href="#about">О нас</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="">Лицензии</a>
+            <a class="navigation__link scroll-to" href="#licenses">Лицензии</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="">Услуги</a>
+            <a class="navigation__link scroll-to" href="#service">Услуги</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="">Контакты</a>
+            <a class="navigation__link scroll-to" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -51,7 +51,7 @@
         <button class="callback__btn" type="submit">Отправить</button>
       </form>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <picture>
         <source srcset="img/img1.webp" type="image/webp">
         <img src="img/img1.jpg" width="607" height="403" alt="команда">
@@ -67,17 +67,15 @@
         </p>
       </div>
     </section>
-    <section class="licenses">
+    <section class="licenses" id="licenses">
       <div class="licenses__wrapper">
         <h2 class="licenses__title">Лицензии</h2>
         <div class="licenses__img-box">
           <picture class="licenses__doc">
-            <source srcset="img/doc1.webp" type="image/webp">
-            <img src="img/doc1.jpg" width="270" height="367" alt="свидетельство">
+            <img src="img/doc1.jpg" width="270" height="367" alt="свидетельство" data-src="img/doc1f.jpg">
           </picture>
           <picture class="licenses__doc">
-            <source srcset="img/doc2.webp" type="image/webp">
-            <img src="img/doc2.jpg" width="270" height="367" alt="лицензия">
+            <img src="img/doc2.jpg" width="270" height="367" alt="лицензия" data-src="img/doc2f.jpg">
           </picture>
         </div>
         <div class="licenses__content">
@@ -91,7 +89,7 @@
         </div>
       </div>
     </section>
-    <section class="service">
+    <section class="service" id="service">
       <h2 class="service__title">Наши услуги</h2>
       <ul class="service__list">
         <li class="service__item">
@@ -207,7 +205,7 @@
         </li>
       </ul>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="contacts__content">
         <h2 class="contacts__title">Контакты</h2>
         <p class="contacts__address">ул. Яблочкова, 1В/2 • эт. 2</p>
@@ -231,7 +229,12 @@
         <button class="feedback__btn" type="submit">Отправить</button>
       </form>
     </section>
+    <div class="licenses__modal">
+      <button class="licenses__modal-close" type="button" aria-label="закрыть"></button>
+      <img src="img/doc1f.jpg" width="930" height="1280" alt="свидетельство">
+    </div>
   </main>
-  <footer></footer>
+  <script src="js/libs.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
