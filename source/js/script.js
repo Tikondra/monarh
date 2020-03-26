@@ -1,12 +1,8 @@
 (function () {
-  var heightScroll = 220;
+  var heightScroll = 180;
 
   if (window.matchMedia("screen and (min-width:1004px)").matches) {
-    heightScroll = 100;
-  }
-
-  if (window.matchMedia("screen and (min-width:768px)").matches) {
-    heightScroll = 180;
+    heightScroll = 10;
   }
 
   $("a.scroll-to").on("click", function(e){
@@ -26,7 +22,7 @@
   });
 })();
 
-(function () {
+function modalDocView () {
   var previewDoc = document.querySelectorAll('.licenses__doc img');
   var modalDoc = document.querySelector('.licenses__modal');
   var modalImg = modalDoc.querySelector('img');
@@ -41,4 +37,8 @@
       })
     })
   })
-})();
+};
+
+if (document.querySelector('.licenses__modal')) {
+  modalDocView();
+};

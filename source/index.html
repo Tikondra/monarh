@@ -28,8 +28,11 @@
         </ul>
       </nav>
       <div class="header__contacts">
-        <p class="header__address">ул. Набережная Пр.&nbsp;затона,&nbsp;17&nbsp;/&nbsp;1</p>
-        <a class="header__phone" href="tel:88005115060">8 (800) 511-50-60</a>
+        <p class="header__address">ул. Яблочкова 1В&nbsp;лит&nbsp;Б, 2&nbsp;этаж,&nbsp;каб&nbsp;№18</p>
+        <div class="header__phones">
+          <a class="header__phone" href="tel:88512364320">8 (8512) 36-43-20 - Офис</a>
+          <a class="header__phone" href="tel:88512364320">8 (8512) 36-00-51 - Дежурная часть</a>
+        </div>
       </div>
     </div>
   </header>
@@ -37,7 +40,7 @@
     <section class="banner">
       <div class="banner__wrapper">
         <div class="banner__content">
-          <h1 class="banner__title">Охранное агенство <span>«МОНАРХ»</span></h1>
+          <h1 class="banner__title">Охранное агентство <span>«МОНАРХ»</span></h1>
           <p class="banner__text">
             Мы располагаем самыми современными техническими средствами и штатом опытных лицензированных охранников
           </p>
@@ -49,42 +52,72 @@
         <input class="callback__input" type="tel" name="phone" placeholder="Ваш номер">
         <input class="callback__input" type="text" name="name" placeholder="Ваше имя">
         <button class="callback__btn" type="submit">Отправить</button>
+        <label class="callback__agree">
+          <input type="checkbox" name="agree" checked disabled>
+          <span>Я согласен на обработку персональных данных</span>
+        </label>
       </form>
     </section>
     <section class="about" id="about">
-      <picture>
-        <source srcset="img/img1.webp" type="image/webp">
-        <img src="img/img1.jpg" width="607" height="403" alt="команда">
-      </picture>
-      <div class="about__content">
-        <h2 class="about__title">Услуги охраны</h2>
-        <p class="about__subtitle">Доверьтесь профессионалам</p>
-        <p class="about__text">
-          Мы оказываем высококлассные охранные услуги вот уже более 10 лет и среди наших постоянных клиентов есть сетевые магазины, филиалы крупнейших в России банков, офисы компаний, складские помещения огромной площади. Наш опыт, количество наших клиентов, их отзывы говорят сами за себя.
-        </p>
-        <p class="about__text">
-          Мы не подводим своих клиентов, всегда прибываем по первому звонку и в кратчайшее время. Наша команда превосходно оснащена, мы располагаем отличным автопарком, позволяющим оперативно реагировать на сигналы, современной технической базой, в том числе мы оказываем услуги по установке охранных сигнализаций и «Тревожных кнопок»
-        </p>
+      <div class="about__wrapper">
+        <picture>
+          <source srcset="img/img1.webp" type="image/webp">
+          <img src="img/img1.jpg" width="607" height="403" alt="команда">
+        </picture>
+        <div class="about__content">
+          <h2 class="about__title">Услуги охраны</h2>
+          <p class="about__subtitle">Доверьтесь профессионалам</p>
+          <p class="about__text">
+            Мы оказываем высококлассные охранные услуги вот уже более 10 лет и среди наших постоянных клиентов есть сетевые магазины, филиалы крупнейших в России банков, офисы компаний, складские помещения огромной площади. Наш опыт, количество наших клиентов, их отзывы говорят сами за себя.
+          </p>
+          <p class="about__text">
+            Мы не подводим своих клиентов, всегда прибываем по первому звонку и в кратчайшее время. Наша команда превосходно оснащена, мы располагаем отличным автопарком, позволяющим оперативно реагировать на сигналы, современной технической базой, в том числе мы оказываем услуги по установке охранных сигнализаций и «Тревожных кнопок»
+          </p>
+        </div>
       </div>
     </section>
     <section class="licenses" id="licenses">
       <div class="licenses__wrapper">
         <h2 class="licenses__title">Лицензии</h2>
-        <div class="licenses__img-box">
-          <picture class="licenses__doc">
-            <img src="img/doc1.jpg" width="270" height="367" alt="свидетельство" data-src="img/doc1f.jpg">
-          </picture>
-          <picture class="licenses__doc">
-            <img src="img/doc2.jpg" width="270" height="367" alt="лицензия" data-src="img/doc2f.jpg">
-          </picture>
-        </div>
+        <ul class="licenses__img-box">
+          <li class="licenses__item">
+            <picture class="licenses__doc">
+              <img src="img/doc1.jpg" width="270" height="367" alt="свидетельство" data-src="img/doc1f.jpg">
+            </picture>
+          </li>
+          <li class="licenses__item">
+            <picture class="licenses__doc">
+              <img src="img/doc2.jpg" width="270" height="367" alt="лицензия" data-src="img/doc2f.jpg">
+            </picture>
+          </li>
+          <li class="licenses__item">
+            <picture class="licenses__doc">
+              <img src="img/doc3.jpg" width="270" height="367" alt="свидетельство" data-src="img/doc3f.jpg">
+            </picture>
+          </li>
+          <li class="licenses__item">
+            <picture class="licenses__doc">
+              <img src="img/doc4.jpg" width="270" height="367" alt="лицензия" data-src="img/doc4f.jpg">
+            </picture>
+          </li>
+          <li class="licenses__item">
+            <picture class="licenses__doc">
+              <img src="img/doc5.jpg" width="270" height="367" alt="свидетельство" data-src="img/doc5f.jpg">
+            </picture>
+          </li>
+          <li class="licenses__item">
+            <picture class="licenses__doc">
+              <img src="img/doc6.jpg" width="270" height="367" alt="лицензия" data-src="img/doc6f.jpg">
+            </picture>
+          </li>
+        </ul>
         <div class="licenses__content">
           <h3 class="licenses__subtitle">Мы являемся лицензированной организацией</h3>
           <p class="licenses__text">
             Наши сотрудники имеют все необходимые документы, подтверждающие их квалификацию.
           </p>
           <p class="licenses__text">
-            Так же мы сотрудничаем и работаем с АВО Национальная Гвардия МВД РФ. Накопленный опыт позволяет нашим сотрудникам в сжатые сроки организовать комплекс охранных мероприятий для объектов самого различного назначения, с учетом потребностей клиентов и характера выполняемых задач
+            Так же мы сотрудничаем и работаем с ОВО Россгвардии по АО, также с УМВД РФ по АО. Накопленный опыт позволяет нашим сотрудникам в сжатые сроки организовать комплекс охранных мероприятий для объектов самого различного назначения, с учетом потребностей клиентов и характера выполняемых задач
           </p>
         </div>
       </div>
@@ -97,74 +130,76 @@
       <h2 class="service__title">Наши услуги</h2>
       <ul class="service__list">
         <li class="service__item">
-          <picture>
-            <source srcset="img/img2.webp" type="image/webp">
-            <img src="img/img2.jpg" width="270" height="200" alt="Охрана объектов и имущества">
-          </picture>
-          <h3 class="service__item-title">Охрана объектов и имущества</h3>
+          <a class="service__link" href="property.html">
+            <picture>
+              <source srcset="img/img2.webp" type="image/webp">
+              <img src="img/img2.jpg" width="370" height="272" alt="Охрана объектов и имущества">
+            </picture>
+            <h3 class="service__item-title">Охрана объектов и имущества</h3>
+          </a>
         </li>
         <li class="service__item">
-          <picture>
-            <source srcset="img/img3.webp" type="image/webp">
-            <img src="img/img3.jpg" width="270" height="200" alt="Экономическая безопасность">
-          </picture>
-          <h3 class="service__item-title">Экономическая безопасность</h3>
+          <a class="service__link" href="personal.html">
+            <picture>
+              <source srcset="img/img4.webp" type="image/webp">
+              <img src="img/img4.jpg" width="370" height="272" alt="Личная охрана">
+            </picture>
+            <h3 class="service__item-title">Физическая охрана</h3>
+          </a>
         </li>
         <li class="service__item">
-          <picture>
-            <source srcset="img/img4.webp" type="image/webp">
-            <img src="img/img4.jpg" width="270" height="200" alt="Личная охрана">
-          </picture>
-          <h3 class="service__item-title">Личная охрана</h3>
+          <a class="service__link" href="gbr.html">
+            <picture>
+              <source srcset="img/img5.webp" type="image/webp">
+              <img src="img/img5.jpg" width="370" height="272" alt="Группа быстрого реагирования">
+            </picture>
+            <h3 class="service__item-title">Группа быстрого реагирования</h3>
+          </a>
         </li>
         <li class="service__item">
-          <picture>
-            <source srcset="img/img5.webp" type="image/webp">
-            <img src="img/img5.jpg" width="270" height="200" alt="Группа быстрого реагирования">
-          </picture>
-          <h3 class="service__item-title">Группа быстрого реагирования</h3>
+          <a class="service__link" href="counseling.html">
+            <picture>
+              <source srcset="img/img6.webp" type="image/webp">
+              <img src="img/img6.jpg" width="370" height="272" alt="Консультирование и подготовка рекомендаций">
+            </picture>
+            <h3 class="service__item-title">Консультирование и подготовка рекомендаций к разработке паспорта антитеррористической безопасности</h3>
+          </a>
         </li>
         <li class="service__item">
-          <picture>
-            <source srcset="img/img6.webp" type="image/webp">
-            <img src="img/img6.jpg" width="370" height="272" alt="Консультирование и подготовка рекомендаций">
-          </picture>
-          <h3 class="service__item-title">Консультирование и подготовка рекомендаций</h3>
+          <a class="service__link" href="public.html">
+            <picture>
+              <source srcset="img/img7.webp" type="image/webp">
+              <img src="img/img7.jpg" width="370" height="272" alt="Обеспечение порядка в местах проведения массовых мероприятий">
+            </picture>
+            <h3 class="service__item-title">Обеспечение порядка в местах проведения массовых мероприятий</h3>
+          </a>
         </li>
         <li class="service__item">
-          <picture>
-            <source srcset="img/img7.webp" type="image/webp">
-            <img src="img/img7.jpg" width="370" height="272" alt="Обеспечение порядка в местах проведения массовых мероприятий">
-          </picture>
-          <h3 class="service__item-title">Обеспечение порядка в местах проведения массовых мероприятий</h3>
+          <a class="service__link" href="escort.html">
+            <picture>
+              <source srcset="img/img9.webp" type="image/webp">
+              <img src="img/img9.jpg" width="370" height="272" alt="Сопровождение грузов">
+            </picture>
+            <h3 class="service__item-title">Сопровождение грузов</h3>
+          </a>
         </li>
         <li class="service__item">
-          <picture>
-            <source srcset="img/img8.webp" type="image/webp">
-            <img src="img/img8.jpg" width="370" height="272" alt="Техническая безопасность">
-          </picture>
-          <h3 class="service__item-title">Техническая безопасность</h3>
+          <a class="service__link" href="hourly.html">
+            <picture>
+              <source srcset="img/img10.webp" type="image/webp">
+              <img src="img/img10.jpg" width="370" height="272" alt="Почасовая охрана">
+            </picture>
+            <h3 class="service__item-title">Почасовая охрана</h3>
+          </a>
         </li>
         <li class="service__item">
-          <picture>
-            <source srcset="img/img9.webp" type="image/webp">
-            <img src="img/img9.jpg" width="370" height="272" alt="Сопровождение грузов">
-          </picture>
-          <h3 class="service__item-title">Сопровождение грузов</h3>
-        </li>
-        <li class="service__item">
-          <picture>
-            <source srcset="img/img10.webp" type="image/webp">
-            <img src="img/img10.jpg" width="370" height="272" alt="Почасовая охрана">
-          </picture>
-          <h3 class="service__item-title">Почасовая охрана</h3>
-        </li>
-        <li class="service__item">
-          <picture>
-            <source srcset="img/img11.webp" type="image/webp">
-            <img src="img/img11.jpg" width="370" height="272" alt="Видеонаблюдение">
-          </picture>
-          <h3 class="service__item-title">Видеонаблюдение</h3>
+          <a class="service__link" href="video.html">
+            <picture>
+              <source srcset="img/img11.webp" type="image/webp">
+              <img src="img/img11.jpg" width="370" height="272" alt="Видеонаблюдение">
+            </picture>
+            <h3 class="service__item-title">Видеонаблюдение</h3>
+          </a>
         </li>
       </ul>
     </section>
@@ -212,8 +247,9 @@
     <section class="contacts" id="contacts">
       <div class="contacts__content">
         <h2 class="contacts__title">Контакты</h2>
-        <p class="contacts__address">ул. Яблочкова, 1В/2 • эт. 2</p>
-        <a class="contacts__phone" href="tel:88005115060">8 (800) 511-50-60</a>
+        <p class="contacts__address">ул. Яблочкова 1В&nbsp;лит&nbsp;Б, 2&nbsp;этаж,&nbsp;каб&nbsp;№18</p>
+        <a class="contacts__phone" href="tel:88512360051">8 (8512) 36-00-51 <span>- Дежурная часть</span></a>
+        <a class="contacts__phone" href="tel:88512364320">8 (8512) 36-43-20 <span>- Офис</span></a>
         <p class="contacts__time">
           Офис работает с<br> Пн - Пт <span class="contacts__time--yellow">9:00 до 20:00</span><br> <span class="contacts__time--gray">Сб - Вс выходной</span>
         </p>
@@ -225,7 +261,6 @@
         <h2 class="feedback__title">Обратная связь</h2>
         <input class="feedback__input" type="tel" name="phone" placeholder="Ваш номер">
         <input class="feedback__input feedback__input--name" type="text" name="name" placeholder="Ваше имя">
-        <textarea class="feedback__text" placeholder="Введите сообщение"></textarea>
         <label class="feedback__agree">
           <input type="checkbox" name="agree" checked disabled>
           <span>Я согласен на обработку персональных данных</span>
@@ -235,6 +270,13 @@
     </section>
 
   </main>
+  <footer class="footer">
+    <div class="footer__copyright">
+      <p>© 2020 Все права защищены</p>
+      <div class="footer__copyright-logo"></div>
+      <a href="http://bzcekh.ru/"></a>
+    </div>
+  </footer>
   <script src="js/libs.min.js"></script>
   <script src="js/script.js"></script>
 </body>

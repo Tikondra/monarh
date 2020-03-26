@@ -1,21 +1,24 @@
 .header {
   background-color: #111111;
   position: sticky;
-  z-index: 10;
+  z-index: 100;
   top: 0;
 }
 
 .header__wrapper {
   max-width: 500px;
   margin: auto;
-  padding: 15px;
+  padding: 5px 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .header__address {
-  padding-left: 30px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
+  padding: 3px 0 3px 30px;
   color: #fff;
   background-image: url("../img/pin.svg");
   background-repeat: no-repeat;
@@ -23,6 +26,7 @@
 }
 
 .header__phone {
+  display: block;
   padding-left: 30px;
   color: #fff;
   text-decoration: none;
@@ -47,15 +51,20 @@
     display: flex;
     align-items: center;
     margin-left: auto;
+    margin-top: -30px;
   }
 
   .header__address {
-    max-width: 200px;
+    max-width: 230px;
   }
 }
 
 @media (min-width: 1024px) {
   .header__wrapper {
     max-width: 1170px;
+  }
+
+  .header__contacts {
+    margin-top: 0;
   }
 }

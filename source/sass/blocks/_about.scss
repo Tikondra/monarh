@@ -40,9 +40,16 @@
 
 @media (min-width: 600px) {
   .about {
+    position: relative;
+    z-index: 5;
+    background-color: #fff;
+  }
+
+  .about__wrapper {
     max-width: 1170px;
     margin: auto;
-    padding: 50px 0;
+    padding: 110px 0 25px;
+    margin-top: -90px;
     display: flex;
     align-items: center;
     justify-content: space-between;

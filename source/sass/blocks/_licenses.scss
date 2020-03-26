@@ -9,13 +9,15 @@
 }
 
 .licenses__img-box {
+  @include list;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.licenses__doc {
-  margin: 5px;
-  cursor: pointer;
+.licenses__item {
+  width: 33%;
 }
 
 .licenses__content {
@@ -62,10 +64,11 @@
 .licenses__modal {
   display: none;
   position: absolute;
-  top: 0;
+  top: 100px;
   left: 0;
   z-index: 2;
   margin: auto;
+  max-width: 600px;
 
   &--show {
     display: block;
@@ -86,6 +89,11 @@
 }
 
 @media (min-width: 768px) {
+  .licenses {
+    padding: 110px 0 25px;
+    margin-top: -90px;
+  }
+
   .licenses__wrapper {
     max-width: 1170px;
     margin: auto;

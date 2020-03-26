@@ -1,6 +1,6 @@
 .navigation__list {
   @include list;
-  padding: 0 0 0 50px;
+  padding: 0 0 0 30px;
 }
 
 .navigation__link {
@@ -29,6 +29,6 @@
   }
 
   .navigation__item {
-    margin: 0 20px;
+    margin: 0 15px;
   }
 }

@@ -35,7 +35,7 @@
 
 .service__item-title {
   position: relative;
-  max-width: 272px;
+  max-width: 370px;
   margin-left: auto;
   margin-right: auto;
   font-size: 18px;
@@ -58,9 +58,13 @@
   }
 }
 
+.service__link {
+  text-decoration: none;
+}
+
 @media (min-width: 678px) {
   .service__list {
-    max-width: 830px;
+    max-width: 650px;
   }
 
   .service__item {
@@ -70,7 +74,8 @@
 
 @media (min-width: 1170px) {
   .service {
-    padding: 25px 0;
+    padding: 110px 0 25px;
+    margin-top: -90px;
   }
 
   .service__list {

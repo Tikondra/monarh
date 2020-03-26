@@ -17,8 +17,7 @@
   text-align: center;
 }
 
-.feedback__input,
-.feedback__text {
+.feedback__input {
   width: 100%;
   padding: 13px 10px;
   margin-bottom: 20px;
@@ -61,8 +60,7 @@
     align-items: flex-start;
   }
 
-  .feedback__input,
-  .feedback__text {
+  .feedback__input {
     max-width: 302px;
   }
 
@@ -83,16 +81,10 @@
 
   .feedback__agree {
     order: 2;
-    margin-top: 80px;
-    margin-bottom: -40px;
+    margin-top: 15px;
   }
 
   .feedback__btn {
     order: 3;
-  }
-
-  .feedback__text {
-    min-height: 122px;
-    margin-bottom: -50px;
   }
 }
